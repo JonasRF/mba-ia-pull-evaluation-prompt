@@ -331,13 +331,12 @@ Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seç�
 
 Como as três técnicas se complementam:
 <br>
-Role Prompting    → define "quem" responde e com qual mentalidade
-       ↓
-Chain of Thought  → define "como" raciocinar antes de escrever
-       ↓
-Few-Shot Learning → define "o quê" escrever, com exemplos concretos
+Role Prompting  - define "quem" responde e com qual mentalidade
+       
+Chain of Thought - define "como" raciocinar antes de escrever
+       
+Few-Shot Learning - define "o quê" escrever, com exemplos concretos
 Juntas, eliminam os três principais pontos de falha em geração de user stories: persona errada, estrutura inadequada para a complexidade do bug e nível de detalhe inconsistente.
-------------------------------------------------------------------------------------------------------------------------------
 
    B) **Seção "Resultados Finais"**:
 
@@ -359,7 +358,7 @@ Juntas, eliminam os três principais pontos de falha em geração de user storie
 3. **Evidências no LangSmith**:
    - Link público (ou screenshots) do dashboard do LangSmith
      
-     - <img width="1169" height="505" alt="image" src="https://github.com/user-attachments/assets/70646b7c-7d02-4adb-866a-32a0505d2858" />
+     <img width="1169" height="505" alt="image" src="https://github.com/user-attachments/assets/70646b7c-7d02-4adb-866a-32a0505d2858" />
 
      - Tracing detalhado de pelo menos 3 exemplos
        
