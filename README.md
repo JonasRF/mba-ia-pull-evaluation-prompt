@@ -329,23 +329,23 @@ EXEMPLO 13 → COMPLEX / múltiplos problemas críticos
 EXEMPLO 15 → COMPLEX / mobile + sync + conflito + memória
 Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seções incluir e qual profundidade de detalhe aplicar. O modelo não precisa inferir regras — ele encontra o exemplo mais similar e replica a estrutura, substituindo apenas o conteúdo.
 
-###Como as três técnicas se complementam:
+##Como as três técnicas se complementam:
 <br>
 Role Prompting  - define "quem" responde e com qual mentalidade
 <br>       
 Chain of Thought - define "como" raciocinar antes de escrever
 <br>       
 Few-Shot Learning - define "o quê" escrever, com exemplos concretos
-<br>
-Juntas, eliminam os três principais pontos de falha em geração de user stories: persona errada, estrutura inadequada para a complexidade do bug e nível de detalhe inconsistente.
-<br>
+
+###Juntas, eliminam os três principais pontos de falha em geração de user stories: persona errada, estrutura inadequada para a complexidade do bug e nível de detalhe inconsistente.
+
    B) **Seção "Resultados Finais"**:
 
    - Link público do seu dashboard do LangSmith mostrando as avaliações: https://smith.langchain.com/public/8e114d59-4c04-4a2e-bb74-c907a62a2d0a/d
      
    - Screenshots das avaliações com as notas mínimas de 0.9 atingidas
 
-    <img width="885" height="591" alt="image" src="https://github.com/user-attachments/assets/e4d4fd79-0975-401a-8b1f-911b3ddce82d" />
+  <img width="885" height="591" alt="image" src="https://github.com/user-attachments/assets/e4d4fd79-0975-401a-8b1f-911b3ddce82d" />
 
  
    - Tabela comparativa: prompts ruins (v1) vs prompts otimizados (v2)
