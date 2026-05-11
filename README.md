@@ -286,22 +286,57 @@ python src/evaluate.py
 ```
 
 ---
-
-## Entregável
-
-1. **Repositório público no GitHub** (fork do repositório base) contendo:
-
-   - Todo o código-fonte implementado
-   - Arquivo `prompts/bug_to_user_story_v2.yml` 100% preenchido e funcional
-   - Arquivo `README.md` atualizado com:
-
-2. **README.md deve conter:**
+ 
+  **Repositório do Github**: 
+   ----------------------------------------------------------------
 
    A) **Seção "Técnicas Aplicadas (Fase 2)"**:
 
-   - Quais técnicas avançadas você escolheu para refatorar os prompts
-   - Justificativa de por que escolheu cada técnica
-   - Exemplos práticos de como aplicou cada técnica
+   Para criar o prompt do arquivo bug_to_user_story_v2 , foram aplicadas três técnicas avançadas conforme demostrado abaixo.
+________________________________________
+1. Role Prompting
+O que é: Atribuir uma identidade/especialidade explícita ao modelo antes de qualquer instrução.
+Por que foi escolhida: Sem um papel definido, o modelo tende a gerar user stories genéricas. Ao declarar um Senior PM com domínios específicos, o output alinha vocabulário, nível de detalhe e estrutura ao padrão profissional esperado.
+Como foi aplicada no prompt:
+Você é um Senior Product Manager especialista em engenharia 
+de requisitos ágil.
+Domínios: e-commerce, SaaS B2B, ERP, CRM, mobile apps.
+Missão: replicar EXATAMENTE a estrutura, seções, wording e 
+nível de detalhe dos exemplos abaixo.
+O papel vem acompanhado de uma missão restritiva — "fidelidade total ao padrão, não criatividade" — para evitar que o modelo improvise fora do template.
+________________________________________
+2. Chain of Thought (CoT) 
+O que é: Instruir o modelo a raciocinar em etapas antes de produzir o output, mas sem escrever esse raciocínio na resposta final.
+Por que foi escolhida: Bugs têm complexidades diferentes. Sem uma etapa de classificação prévia, o modelo pode aplicar a estrutura errada (ex: usar seções de COMPLEX num bug SIMPLE). O CoT força essa decisão antes de escrever.
+Como foi aplicada no prompt:
+O modelo é instruído a identificar mentalmente três coisas, nessa ordem:
+Etapa	O que decide	Exemplo de saída interna
+1. Complexidade	SIMPLE / MEDIUM / COMPLEX	"1 problema sem logs → SIMPLE"
+2. Persona	String exata da lista de mapeamento	"dashboard/admin → Como um administrador..."
+3. Seção extra	Nome exato da seção adicional	"SQL + timeout → Contexto Técnico:"
+A instrução "analise internamente, NÃO escreva na resposta" é o que transforma CoT em raciocínio latente, mantendo o output limpo.
+________________________________________
+3. Few-Shot Learning (15 exemplos calibrados)
+O que é: Fornecer pares ENTRADA → SAÍDA CORRETA como exemplos dentro do próprio prompt, para que o modelo aprenda o padrão por indução.
+Por que foi escolhida: É a técnica de maior impacto para tarefas com formato rígido. Em vez de descrever a estrutura em regras abstratas, os exemplos mostram o padrão concreto — o modelo generaliza por similaridade estrutural.
+Como foi aplicada no prompt:
+Os 15 exemplos foram distribuídos para cobrir todas as combinações relevantes:
+EXEMPLO 1  → SIMPLE  / e-commerce / UI
+EXEMPLO 6  → MEDIUM  / webhook / integração  
+EXEMPLO 8  → MEDIUM  / segurança / endpoint
+EXEMPLO 10 → MEDIUM  / Android / ANR
+EXEMPLO 13 → COMPLEX / múltiplos problemas críticos 
+EXEMPLO 15 → COMPLEX / mobile + sync + conflito + memória
+Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seções incluir e qual profundidade de detalhe aplicar. O modelo não precisa inferir regras — ele encontra o exemplo mais similar e replica a estrutura, substituindo apenas o conteúdo.
+________________________________________
+Como as três técnicas se complementam
+Role Prompting    → define "quem" responde e com qual mentalidade
+       ↓
+Chain of Thought  → define "como" raciocinar antes de escrever
+       ↓
+Few-Shot Learning → define "o quê" escrever, com exemplos concretos
+Juntas, eliminam os três principais pontos de falha em geração de user stories: persona errada, estrutura inadequada para a complexidade do bug e nível de detalhe inconsistente.
+------------------------------------------------------------------------------------------------------------------------------
 
    B) **Seção "Resultados Finais"**:
 
