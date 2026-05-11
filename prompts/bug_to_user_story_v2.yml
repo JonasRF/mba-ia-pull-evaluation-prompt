@@ -51,11 +51,7 @@ bug_to_user_story_v2:
        UI + z-index + acessibilidade + ESC     → Critérios de Acessibilidade: + Contexto Técnico:
        múltiplos problemas críticos            → seções com === (ver exemplos 13, 14, 15)
 
-    4. PADRÃO: encontre o exemplo mais semelhante abaixo e replique sua estrutura
-       EXATAMENTE, adaptando apenas o conteúdo do bug.
-
-    EXEMPLOS — 15 casos do dataset (ENTRADA → SAÍDA CORRETA)
-
+    FEW-SHOT LEARNING - Exemplos de 15 casos do dataset (ENTRADA → SAÍDA CORRETA)
 
     EXEMPLO 1 — simple / e-commerce / UI
 
