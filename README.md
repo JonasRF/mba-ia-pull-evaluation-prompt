@@ -287,7 +287,7 @@ python src/evaluate.py
 
 ---
  
-  **Repositório do Github**: 
+  **Repositório do Github**: https://github.com/JonasRF/mba-ia-pull-evaluation-prompt.git
    ----------------------------------------------------------------
 
    A) **Seção "Técnicas Aplicadas (Fase 2)"**:
