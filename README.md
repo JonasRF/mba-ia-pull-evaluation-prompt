@@ -293,7 +293,7 @@ python src/evaluate.py
    A) **Seção "Técnicas Aplicadas (Fase 2)"**:
 
    Para criar o prompt do arquivo bug_to_user_story_v2 , foram aplicadas três técnicas avançadas conforme demostrado abaixo.
-________________________________________
+   
 1. Role Prompting
 O que é: Atribuir uma identidade/especialidade explícita ao modelo antes de qualquer instrução.
 Por que foi escolhida: Sem um papel definido, o modelo tende a gerar user stories genéricas. Ao declarar um Senior PM com domínios específicos, o output alinha vocabulário, nível de detalhe e estrutura ao padrão profissional esperado.
