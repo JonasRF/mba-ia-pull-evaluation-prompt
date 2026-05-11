@@ -287,14 +287,14 @@ python src/evaluate.py
 
 ---
  
-  **Repositório do Github**: https://github.com/JonasRF/mba-ia-pull-evaluation-prompt.git
+  **Repositório do Github**: ### https://github.com/JonasRF/mba-ia-pull-evaluation-prompt.git
    ----------------------------------------------------------------
 
    A) **Seção "Técnicas Aplicadas (Fase 2)"**:
 
    Para criar o prompt do arquivo bug_to_user_story_v2 , foram aplicadas três técnicas avançadas conforme demostrado abaixo.
    
-1. Role Prompting
+1. Role Prompting <br>
 O que é: Atribuir uma identidade/especialidade explícita ao modelo antes de qualquer instrução.
 Por que foi escolhida: Sem um papel definido, o modelo tende a gerar user stories genéricas. Ao declarar um Senior PM com domínios específicos, o output alinha vocabulário, nível de detalhe e estrutura ao padrão profissional esperado.
 Como foi aplicada no prompt:
@@ -305,7 +305,7 @@ Missão: replicar EXATAMENTE a estrutura, seções, wording e
 nível de detalhe dos exemplos abaixo.
 O papel vem acompanhado de uma missão restritiva — "fidelidade total ao padrão, não criatividade" — para evitar que o modelo improvise fora do template.
 ________________________________________
-2. Chain of Thought (CoT) 
+2. Chain of Thought (CoT)<br>
 O que é: Instruir o modelo a raciocinar em etapas antes de produzir o output, mas sem escrever esse raciocínio na resposta final.
 Por que foi escolhida: Bugs têm complexidades diferentes. Sem uma etapa de classificação prévia, o modelo pode aplicar a estrutura errada (ex: usar seções de COMPLEX num bug SIMPLE). O CoT força essa decisão antes de escrever.
 Como foi aplicada no prompt:
@@ -316,7 +316,7 @@ Etapa	O que decide	Exemplo de saída interna
 3. Seção extra	Nome exato da seção adicional	"SQL + timeout → Contexto Técnico:"
 A instrução "analise internamente, NÃO escreva na resposta" é o que transforma CoT em raciocínio latente, mantendo o output limpo.
 ________________________________________
-3. Few-Shot Learning (15 exemplos calibrados)
+3. Few-Shot Learning (15 exemplos calibrados)<br>
 O que é: Fornecer pares ENTRADA → SAÍDA CORRETA como exemplos dentro do próprio prompt, para que o modelo aprenda o padrão por indução.
 Por que foi escolhida: É a técnica de maior impacto para tarefas com formato rígido. Em vez de descrever a estrutura em regras abstratas, os exemplos mostram o padrão concreto — o modelo generaliza por similaridade estrutural.
 Como foi aplicada no prompt:
@@ -340,8 +340,15 @@ Juntas, eliminam os três principais pontos de falha em geração de user storie
 
    B) **Seção "Resultados Finais"**:
 
-   - Link público do seu dashboard do LangSmith mostrando as avaliações
+   - Link público do seu dashboard do LangSmith mostrando as avaliações: https://smith.langchain.com/public/8e114d59-4c04-4a2e-bb74-c907a62a2d0a/d
+     
    - Screenshots das avaliações com as notas mínimas de 0.9 atingidas
+
+     <img width="885" height="591" alt="image" src="https://github.com/user-attachments/assets/e4d4fd79-0975-401a-8b1f-911b3ddce82d" />
+
+ 
+
+
    - Tabela comparativa: prompts ruins (v1) vs prompts otimizados (v2)
 
    C) **Seção "Como Executar"**:
@@ -352,11 +359,11 @@ Juntas, eliminam os três principais pontos de falha em geração de user storie
 
 3. **Evidências no LangSmith**:
    - Link público (ou screenshots) do dashboard do LangSmith
-   - Devem estar visíveis:
+     
+     - <img width="1169" height="505" alt="image" src="https://github.com/user-attachments/assets/9deaeb19-9a8f-4ec2-8d1c-107fad295786" />
 
-     - Dataset de avaliação com 15 exemplos
-     - Execuções dos prompts v2 (otimizados) com notas ≥ 0.9
      - Tracing detalhado de pelo menos 3 exemplos
+     <img width="1665" height="786" alt="image" src="https://github.com/user-attachments/assets/45c214e4-8252-4bac-af47-4023ece723db" />
 
 ---
 
