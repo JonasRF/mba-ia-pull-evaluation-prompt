@@ -309,8 +309,7 @@ O que é: Instruir o modelo a raciocinar em etapas antes de produzir o output, m
 Por que foi escolhida: Bugs têm complexidades diferentes. Sem uma etapa de classificação prévia, o modelo pode aplicar a estrutura errada (ex: usar seções de COMPLEX num bug SIMPLE). O CoT força essa decisão antes de escrever.
 Como foi aplicada no prompt:
 O modelo é instruído a identificar mentalmente três coisas, nessa ordem:
-Etapa	O que decide	Exemplo de saída interna
-  <img width="683" height="245" alt="image" src="https://github.com/user-attachments/assets/0fb645b1-f00e-44dc-9b1b-609c103ce07d" />
+  <img width="696" height="247" alt="image" src="https://github.com/user-attachments/assets/781566b3-b872-47eb-8b08-2c0900ea5adf" />
   
 A instrução "analise internamente, NÃO escreva na resposta" é o que transforma CoT em raciocínio latente, mantendo o output limpo.
 ________________________________________
