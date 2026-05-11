@@ -310,9 +310,8 @@ Por que foi escolhida: Bugs têm complexidades diferentes. Sem uma etapa de clas
 Como foi aplicada no prompt:
 O modelo é instruído a identificar mentalmente três coisas, nessa ordem:
 Etapa	O que decide	Exemplo de saída interna
-1. Complexidade	SIMPLE / MEDIUM / COMPLEX	"1 problema sem logs → SIMPLE"
-2. Persona	String exata da lista de mapeamento	"dashboard/admin → Como um administrador..."
-3. Seção extra	Nome exato da seção adicional	"SQL + timeout → Contexto Técnico:"
+  <img width="683" height="245" alt="image" src="https://github.com/user-attachments/assets/0fb645b1-f00e-44dc-9b1b-609c103ce07d" />
+  
 A instrução "analise internamente, NÃO escreva na resposta" é o que transforma CoT em raciocínio latente, mantendo o output limpo.
 ________________________________________
 3. Few-Shot Learning (15 exemplos calibrados)<br>
