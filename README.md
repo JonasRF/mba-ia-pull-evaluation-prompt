@@ -328,8 +328,9 @@ EXEMPLO 10 → MEDIUM  / Android / ANR
 EXEMPLO 13 → COMPLEX / múltiplos problemas críticos 
 EXEMPLO 15 → COMPLEX / mobile + sync + conflito + memória
 Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seções incluir e qual profundidade de detalhe aplicar. O modelo não precisa inferir regras — ele encontra o exemplo mais similar e replica a estrutura, substituindo apenas o conteúdo.
-________________________________________
-Como as três técnicas se complementam
+
+Como as três técnicas se complementam:
+<br>
 Role Prompting    → define "quem" responde e com qual mentalidade
        ↓
 Chain of Thought  → define "como" raciocinar antes de escrever
@@ -344,11 +345,9 @@ Juntas, eliminam os três principais pontos de falha em geração de user storie
      
    - Screenshots das avaliações com as notas mínimas de 0.9 atingidas
 
-     <img width="885" height="591" alt="image" src="https://github.com/user-attachments/assets/e4d4fd79-0975-401a-8b1f-911b3ddce82d" />
+    <img width="885" height="591" alt="image" src="https://github.com/user-attachments/assets/e4d4fd79-0975-401a-8b1f-911b3ddce82d" />
 
  
-
-
    - Tabela comparativa: prompts ruins (v1) vs prompts otimizados (v2)
 
    C) **Seção "Como Executar"**:
