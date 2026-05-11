@@ -287,8 +287,7 @@ python src/evaluate.py
 
 ---
  
-  Repositório do Github: https://github.com/JonasRF/mba-ia-pull-evaluation-prompt.git
-   ----------------------------------------------------------------
+  ###Repositório do Github: https://github.com/JonasRF/mba-ia-pull-evaluation-prompt.git
 
    A) **Seção "Técnicas Aplicadas (Fase 2)"**:
 
@@ -336,16 +335,16 @@ Role Prompting  - define "quem" responde e com qual mentalidade
 Chain of Thought - define "como" raciocinar antes de escrever
 <br>       
 Few-Shot Learning - define "o quê" escrever, com exemplos concretos
-
+<br>  
 ###Juntas, eliminam os três principais pontos de falha em geração de user stories: persona errada, estrutura inadequada para a complexidade do bug e nível de detalhe inconsistente.
-
+<br>  
    B) **Seção "Resultados Finais"**:
 
    - Link público do seu dashboard do LangSmith mostrando as avaliações: https://smith.langchain.com/public/8e114d59-4c04-4a2e-bb74-c907a62a2d0a/d
      
    - Screenshots das avaliações com as notas mínimas de 0.9 atingidas
 
-  <img width="885" height="591" alt="image" src="https://github.com/user-attachments/assets/e4d4fd79-0975-401a-8b1f-911b3ddce82d" />
+     <img width="885" height="591" alt="image" src="https://github.com/user-attachments/assets/e4d4fd79-0975-401a-8b1f-911b3ddce82d" />
 
  
    - Tabela comparativa: prompts ruins (v1) vs prompts otimizados (v2)
