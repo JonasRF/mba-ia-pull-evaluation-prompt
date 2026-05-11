@@ -287,7 +287,7 @@ python src/evaluate.py
 
 ---
  
-  ###Repositório do Github: https://github.com/JonasRF/mba-ia-pull-evaluation-prompt.git
+  ### Repositório do Github: https://github.com/JonasRF/mba-ia-pull-evaluation-prompt.git
 
    A) **Seção "Técnicas Aplicadas (Fase 2)"**:
 
@@ -328,7 +328,7 @@ EXEMPLO 13 → COMPLEX / múltiplos problemas críticos
 EXEMPLO 15 → COMPLEX / mobile + sync + conflito + memória
 Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seções incluir e qual profundidade de detalhe aplicar. O modelo não precisa inferir regras — ele encontra o exemplo mais similar e replica a estrutura, substituindo apenas o conteúdo.
 
-##Como as três técnicas se complementam:
+## Como as três técnicas se complementam:
 <br>
 Role Prompting  - define "quem" responde e com qual mentalidade
 <br>       
@@ -336,7 +336,7 @@ Chain of Thought - define "como" raciocinar antes de escrever
 <br>       
 Few-Shot Learning - define "o quê" escrever, com exemplos concretos
 <br>  
-###Juntas, eliminam os três principais pontos de falha em geração de user stories: persona errada, estrutura inadequada para a complexidade do bug e nível de detalhe inconsistente.
+### Juntas, eliminam os três principais pontos de falha em geração de user stories: persona errada, estrutura inadequada para a complexidade do bug e nível de detalhe inconsistente.
 <br>  
    B) **Seção "Resultados Finais"**:
 
