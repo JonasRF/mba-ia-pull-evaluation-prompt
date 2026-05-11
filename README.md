@@ -360,9 +360,10 @@ Juntas, eliminam os três principais pontos de falha em geração de user storie
 3. **Evidências no LangSmith**:
    - Link público (ou screenshots) do dashboard do LangSmith
      
-     - <img width="1169" height="505" alt="image" src="https://github.com/user-attachments/assets/9deaeb19-9a8f-4ec2-8d1c-107fad295786" />
+     - <img width="1169" height="505" alt="image" src="https://github.com/user-attachments/assets/70646b7c-7d02-4adb-866a-32a0505d2858" />
 
      - Tracing detalhado de pelo menos 3 exemplos
+       
      <img width="1665" height="786" alt="image" src="https://github.com/user-attachments/assets/45c214e4-8252-4bac-af47-4023ece723db" />
 
 ---
