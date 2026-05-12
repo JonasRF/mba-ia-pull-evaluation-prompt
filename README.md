@@ -309,7 +309,7 @@ O que é: Instruir o modelo a raciocinar em etapas antes de produzir o output, m
 Por que foi escolhida: Bugs têm complexidades diferentes. Sem uma etapa de classificação prévia, o modelo pode aplicar a estrutura errada (ex: usar seções de COMPLEX num bug SIMPLE). O CoT força essa decisão antes de escrever.
 Como foi aplicada no prompt:
 O modelo é instruído a identificar mentalmente três coisas, nessa ordem:
-   <br>
+   <br><br>
              <img width="691" height="246" alt="image" src="https://github.com/user-attachments/assets/3df607b9-68d7-4450-ace9-54b84621b42e" />
 
   A instrução "analise internamente, NÃO escreva na resposta" é o que transforma CoT em raciocínio latente, mantendo o output limpo.
@@ -337,11 +337,11 @@ Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seç�
    - Link público do seu dashboard do LangSmith mostrando as avaliações: https://smith.langchain.com/public/8e114d59-4c04-4a2e-bb74-c907a62a2d0a/d
      
    - Screenshots das avaliações com as notas mínimas de 0.9 atingidas
-       <br>
+       <br><br>
       <img width="885" height="591" alt="image" src="https://github.com/user-attachments/assets/e4d4fd79-0975-401a-8b1f-911b3ddce82d" />
 
    - Tabela comparativa: prompts ruins (v1) vs prompts otimizados (v2)
-       <br>
+       <br><br>
       <img width="685" height="171" alt="image" src="https://github.com/user-attachments/assets/5acd383a-f466-417b-8087-96a500f5df15" />
 
    C) **Seção "Como Executar"**:
@@ -352,7 +352,7 @@ Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seç�
 
 3. **Evidências no LangSmith**:
      Link público (ou screenshots) do dashboard do LangSmith
-      <br> 
+      <br><br>
      <img width="1169" height="505" alt="image" src="https://github.com/user-attachments/assets/70646b7c-7d02-4adb-866a-32a0505d2858" />
 
      A imagem abaixo mostra o painel principal do tracing dos exemplos trabalhados:
