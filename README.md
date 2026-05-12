@@ -289,7 +289,7 @@ python src/evaluate.py
  
   ### Repositório do Github: https://github.com/JonasRF/mba-ia-pull-evaluation-prompt.git
 
-   A)  ## Técnicas Aplicadas (Fase 2):
+  ## Técnicas Aplicadas (Fase 2):
 
    Para criar o prompt do arquivo bug_to_user_story_v2 , foram aplicadas três técnicas avançadas conforme demostrado abaixo.
    
@@ -341,7 +341,7 @@ Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seç�
        <br><br>
       <img width="685" height="171" alt="image" src="https://github.com/user-attachments/assets/5acd383a-f466-417b-8087-96a500f5df15" />
 
-   C)  ### Como Executar a aplicação:
+  ### Como Executar a aplicação
 
    Primeira fase do projeto:
     - Configurar as variáveis de ambiente conforme o arquivo .env.example:
