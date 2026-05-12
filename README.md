@@ -352,10 +352,11 @@ Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seç�
 
 3. **Evidências no LangSmith**:
      Link público (ou screenshots) do dashboard do LangSmith
-      <br>   
+      <br> 
      <img width="1169" height="505" alt="image" src="https://github.com/user-attachments/assets/70646b7c-7d02-4adb-866a-32a0505d2858" />
 
      A imagem abaixo mostra o painel principal do tracing dos exemplos trabalhados:
+      <br>
       <br>
      <img width="1665" height="786" alt="image" src="https://github.com/user-attachments/assets/45c214e4-8252-4bac-af47-4023ece723db" />
 
