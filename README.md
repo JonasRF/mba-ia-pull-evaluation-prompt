@@ -335,12 +335,12 @@ Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seç�
 
    - Link público do seu dashboard do LangSmith mostrando as avaliações: https://smith.langchain.com/public/8e114d59-4c04-4a2e-bb74-c907a62a2d0a/d
      
-   - Screenshots das avaliações com as notas mínimas de 0.9 atingidas
-
+   - Screenshots das avaliações com as notas mínimas de 0.9 atingidas<br>
      <img width="885" height="591" alt="image" src="https://github.com/user-attachments/assets/e4d4fd79-0975-401a-8b1f-911b3ddce82d" />
 
  
-   - Tabela comparativa: prompts ruins (v1) vs prompts otimizados (v2)
+   - Tabela comparativa: prompts ruins (v1) vs prompts otimizados (v2)<br>
+          <img width="685" height="171" alt="image" src="https://github.com/user-attachments/assets/5acd383a-f466-417b-8087-96a500f5df15" />
 
    C) **Seção "Como Executar"**:
 
@@ -349,13 +349,12 @@ Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seç�
    - Comandos para cada fase do projeto
 
 3. **Evidências no LangSmith**:
-   - Link público (ou screenshots) do dashboard do LangSmith
-     
+   - Link público (ou screenshots) do dashboard do LangSmith<br>   
      <img width="1169" height="505" alt="image" src="https://github.com/user-attachments/assets/70646b7c-7d02-4adb-866a-32a0505d2858" />
 
      - Tracing detalhado de pelo menos 3 exemplos
 
-   A imagem abaixo mostra o painel principal do tracing dos exemplos trabalhados:
+   A imagem abaixo mostra o painel principal do tracing dos exemplos trabalhados:<br>
      <img width="1665" height="786" alt="image" src="https://github.com/user-attachments/assets/45c214e4-8252-4bac-af47-4023ece723db" />
 
       ## Exemplo 01:
