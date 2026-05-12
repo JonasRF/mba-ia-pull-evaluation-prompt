@@ -309,9 +309,9 @@ O que é: Instruir o modelo a raciocinar em etapas antes de produzir o output, m
 Por que foi escolhida: Bugs têm complexidades diferentes. Sem uma etapa de classificação prévia, o modelo pode aplicar a estrutura errada (ex: usar seções de COMPLEX num bug SIMPLE). O CoT força essa decisão antes de escrever.
 Como foi aplicada no prompt:
 O modelo é instruído a identificar mentalmente três coisas, nessa ordem:
-  <img width="696" height="247" alt="image" src="https://github.com/user-attachments/assets/781566b3-b872-47eb-8b08-2c0900ea5adf" />
-  
-A instrução "analise internamente, NÃO escreva na resposta" é o que transforma CoT em raciocínio latente, mantendo o output limpo.
+             <img width="691" height="246" alt="image" src="https://github.com/user-attachments/assets/3df607b9-68d7-4450-ace9-54b84621b42e" />
+
+  A instrução "analise internamente, NÃO escreva na resposta" é o que transforma CoT em raciocínio latente, mantendo o output limpo.
 ________________________________________
 3. Few-Shot Learning (15 exemplos calibrados)<br>
 O que é: Fornecer pares ENTRADA → SAÍDA CORRETA como exemplos dentro do próprio prompt, para que o modelo aprenda o padrão por indução.
@@ -354,11 +354,22 @@ Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seç�
      <img width="1169" height="505" alt="image" src="https://github.com/user-attachments/assets/70646b7c-7d02-4adb-866a-32a0505d2858" />
 
      - Tracing detalhado de pelo menos 3 exemplos
-       
+
+   A imagem abaixo mostra o painel principal do tracing dos exemplos trabalhados:
      <img width="1665" height="786" alt="image" src="https://github.com/user-attachments/assets/45c214e4-8252-4bac-af47-4023ece723db" />
 
----
-
+      ## Exemplo 01:
+    ```
+    https://smith.langchain.com/public/43571862-3de4-4d6d-903b-88336a0106a7/r
+    ```
+      ## Exemplo 02:
+    ```
+    https://smith.langchain.com/public/42d38062-4e1b-4280-a9e9-e27921121b5f/r
+    ```
+      ## Exemplo 03:
+   ```
+     https://smith.langchain.com/public/d9abf67d-2d8b-4445-a4bc-0ddc8a1c23f4/r
+   ```
 ## Dicas Finais
 
 - **Lembre-se da importância da especificidade, contexto e persona** ao refatorar prompts
