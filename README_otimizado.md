@@ -15,7 +15,6 @@
 - [Resultados Obtidos](#resultados-obtidos)
 - [Evidências no LangSmith](#evidências-no-langsmith)
 - [Estrutura do Projeto](#estrutura-do-projeto)
-- [Dicas Finais](#dicas-finais)
 
 ---
 
