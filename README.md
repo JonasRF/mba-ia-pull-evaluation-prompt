@@ -285,6 +285,45 @@ python src/push_prompts.py
 python src/evaluate.py
 ```
 ---
+
+## Entregável
+
+1. **Repositório público no GitHub** (fork do repositório base) contendo:
+
+   - Todo o código-fonte implementado
+   - Arquivo `prompts/bug_to_user_story_v2.yml` 100% preenchido e funcional
+   - Arquivo `README.md` atualizado com:
+
+2. **README.md deve conter:**
+
+   A) **Seção "Técnicas Aplicadas (Fase 2)"**:
+
+   - Quais técnicas avançadas você escolheu para refatorar os prompts
+   - Justificativa de por que escolheu cada técnica
+   - Exemplos práticos de como aplicou cada técnica
+
+   B) **Seção "Resultados Finais"**:
+
+   - Link público do seu dashboard do LangSmith mostrando as avaliações
+   - Screenshots das avaliações com as notas mínimas de 0.9 atingidas
+   - Tabela comparativa: prompts ruins (v1) vs prompts otimizados (v2)
+
+   C) **Seção "Como Executar"**:
+
+   - Instruções claras e detalhadas de como executar o projeto
+   - Pré-requisitos e dependências
+   - Comandos para cada fase do projeto
+
+3. **Evidências no LangSmith**:
+   - Link público (ou screenshots) do dashboard do LangSmith
+   - Devem estar visíveis:
+
+     - Dataset de avaliação com 15 exemplos
+     - Execuções dos prompts v2 (otimizados) com notas ≥ 0.9
+     - Tracing detalhado de pelo menos 3 exemplos
+
+---
+
 ## Dicas Finais
 
 - **Lembre-se da importância da especificidade, contexto e persona** ao refatorar prompts
