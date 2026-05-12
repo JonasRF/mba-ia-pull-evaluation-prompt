@@ -336,12 +336,10 @@ Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seç�
 
    - Link público do seu dashboard do LangSmith mostrando as avaliações: https://smith.langchain.com/public/8e114d59-4c04-4a2e-bb74-c907a62a2d0a/d
      
-   - Screenshots das avaliações com as notas mínimas de 0.9 atingidas
-       <br>
+   - Screenshots das avaliações com as notas mínimas de 0.9 atingidas <br>
      <img width="885" height="591" alt="image" src="https://github.com/user-attachments/assets/e4d4fd79-0975-401a-8b1f-911b3ddce82d" />
 
-   - Tabela comparativa: prompts ruins (v1) vs prompts otimizados (v2)
-       <br>
+   - Tabela comparativa: prompts ruins (v1) vs prompts otimizados (v2) <br>
           <img width="685" height="171" alt="image" src="https://github.com/user-attachments/assets/5acd383a-f466-417b-8087-96a500f5df15" />
 
    C) **Seção "Como Executar"**:
