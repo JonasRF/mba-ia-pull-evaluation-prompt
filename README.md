@@ -329,7 +329,7 @@ Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seç�
  Chain of Thought - define "como" raciocinar antes de escrever<br>       
  Few-Shot Learning - define "o quê" escrever, com exemplos concretos<br>  
    ### Juntas, eliminam os três principais pontos de falha em geração de user stories: persona errada, estrutura inadequada para a complexidade do bug e nível de detalhe inconsistente.<br>  
-   B) **Seção "Resultados Finais"**:
+   B) **Resultados obtidos no projeto"**:
 
    - Link público do seu dashboard do LangSmith mostrando as avaliações: https://smith.langchain.com/public/8e114d59-4c04-4a2e-bb74-c907a62a2d0a/d
      
