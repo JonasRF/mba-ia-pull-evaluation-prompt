@@ -331,20 +331,6 @@ mba-ia-pull-evaluation-prompt/
     └── test_prompts.py               # Testes de validação com pytest
 ```
 
----
-
-## Dicas Finais
-
-- **Especificidade e contexto** fazem toda a diferença na refatoração de prompts
-- **Few-Shot Learning com exemplos bem calibrados** é a técnica de maior impacto para tarefas com formato rígido
-- **Chain of Thought** é essencial para bugs com complexidades variadas — força a classificação antes de escrever
-- **Use o Tracing do LangSmith** como principal ferramenta de debug — ele mostra exatamente o que o LLM está processando
-- **Não altere os datasets de avaliação** — apenas os prompts em `prompts/bug_to_user_story_v2.yml`
-- **Itere entre 3 e 5 vezes** — é o esperado para atingir 0.9 em todas as métricas
-- **Documente seu processo** — a jornada de otimização é tão importante quanto o resultado final
-
----
-
 ## Links Úteis
 
 - [Repositório do projeto](https://github.com/JonasRF/mba-ia-pull-evaluation-prompt.git)
