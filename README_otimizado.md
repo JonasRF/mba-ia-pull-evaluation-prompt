@@ -292,7 +292,7 @@ Juntas, eliminam os três principais pontos de falha em geração de user storie
 
 ### Painel principal de tracing
 
-![Painel de tracing LangSmith](<img width="1658" height="819" alt="image" src="https://github.com/user-attachments/assets/492f8e47-98ba-4db9-9f87-4b3b72059ba5" />)
+<img width="1658" height="819" alt="image" src="https://github.com/user-attachments/assets/492f8e47-98ba-4db9-9f87-4b3b72059ba5" />
 
 ![Detalhe dos exemplos trabalhados](https://github.com/user-attachments/assets/45c214e4-8252-4bac-af47-4023ece723db)
 
