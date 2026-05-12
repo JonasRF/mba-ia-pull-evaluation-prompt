@@ -319,12 +319,9 @@ O que é: Fornecer pares ENTRADA → SAÍDA CORRETA como exemplos dentro do pró
 Por que foi escolhida: É a técnica de maior impacto para tarefas com formato rígido. Em vez de descrever a estrutura em regras abstratas, os exemplos mostram o padrão concreto — o modelo generaliza por similaridade estrutural.
 Como foi aplicada no prompt:
 Os 15 exemplos foram distribuídos para cobrir todas as combinações relevantes:
-EXEMPLO 1  → SIMPLE  / e-commerce / UI
-EXEMPLO 6  → MEDIUM  / webhook / integração  
-EXEMPLO 8  → MEDIUM  / segurança / endpoint
-EXEMPLO 10 → MEDIUM  / Android / ANR
-EXEMPLO 13 → COMPLEX / múltiplos problemas críticos 
-EXEMPLO 15 → COMPLEX / mobile + sync + conflito + memória
+<br><br>
+     <img width="682" height="146" alt="image" src="https://github.com/user-attachments/assets/70a672d9-5a80-46cc-8135-ba48c67a59fa" />
+
 Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seções incluir e qual profundidade de detalhe aplicar. O modelo não precisa inferir regras — ele encontra o exemplo mais similar e replica a estrutura, substituindo apenas o conteúdo.
 
    ## Como as três técnicas se complementam:
