@@ -289,7 +289,7 @@ python src/evaluate.py
  
   ### Repositório do Github: https://github.com/JonasRF/mba-ia-pull-evaluation-prompt.git
 
-   A) **Seção "Técnicas Aplicadas (Fase 2)"**:
+   A) ## Técnicas Aplicadas (Fase 2):
 
    Para criar o prompt do arquivo bug_to_user_story_v2 , foram aplicadas três técnicas avançadas conforme demostrado abaixo.
    
@@ -341,11 +341,72 @@ Cada exemplo ensina três coisas simultaneamente: qual persona usar, quais seç�
        <br><br>
       <img width="685" height="171" alt="image" src="https://github.com/user-attachments/assets/5acd383a-f466-417b-8087-96a500f5df15" />
 
-   C) **Seção "Como Executar"**:
+   C) ### Como Executar a aplicação:
 
-   - Instruções claras e detalhadas de como executar o projeto
-   - Pré-requisitos e dependências
-   - Comandos para cada fase do projeto
+   Primeira fase do projeto:
+    - Configurar as variáveis de ambiente conforme o arquivo .env.example:
+    
+   ```
+    # LangSmith Configuration
+LANGSMITH_TRACING=true
+LANGSMITH_ENDPOINT=https://api.smith.langchain.com
+LANGSMITH_API_KEY=
+LANGSMITH_PROJECT=
+
+# Para descobrir seu username: publique qualquer prompt no LangSmith Hub, depois abra-o e clique no ícone de cadeado (🔒) para ver seu username.
+USERNAME_LANGSMITH_HUB=
+
+# OpenAI Configuration
+OPENAI_API_KEY=
+
+# Google Gemini Configuration
+GOOGLE_API_KEY=
+
+# LLM Configuration
+# LLM_PROVIDER=google
+# LLM_MODEL=gemini-2.5-flash
+# EVAL_MODEL=gemini-2.5-flash
+
+# LLM_PROVIDER=openai
+# LLM_MODEL=gpt-4o-mini
+# EVAL_MODEL=gpt-4o
+
+```
+
+ ### OBS: A escolha de qual LLM utilizar fica a seu critério.<br><br>
+ 
+  Após configurar as variáveis de ambiente será necessário configurar o ambiente virtual (venv) do Python:
+
+  ```
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+  ```
+  Após criar o ambiente virtual e instalar as dependências necessárias o projeto está pronto para ser executado.<br><br>
+
+   ### Segunda fase do projeto:
+
+  - 1º passo: Fazer o pull do prompt v1:
+    ```
+    python .\src\pull_prompts.py
+
+    ```
+    <br>
+    2º passo: Após baixar o prompt v1 e otimizar o prompt para a versão v2 será necessário realizar o push da versão otimizada no hub do langsmith:
+
+    ```
+     python .\src\push_prompts.py
+    
+    ```
+    <br>
+    3º passo: Uma vez que realizou o push, agora será necessário aplicar as métricas de avaliação do prompt otimizado para verificar a eficiente do prompt:
+
+    ```
+    python .\src\evaluate.py
+
+    ```
+     Se obtiver as métricas >= a 0.90, o prompt está apto para ser utilizado em produção.<br><br>
 
 3. **Evidências no LangSmith**:
      Link público (ou screenshots) do dashboard do LangSmith
